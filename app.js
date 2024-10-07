@@ -2,6 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import cors from "cors";
+import contactRoute from "./routers/contactRoute.js";
 
 
 
@@ -11,7 +12,8 @@ app.use(express.json())
 app.use(cors())
 
 
-
+// Routes
+app.use(contactRoute)
 
 
 
